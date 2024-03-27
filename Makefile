@@ -1,7 +1,7 @@
 .PHONY=build
 
 build:
-	@go build -o bin/main cmd/main.go
+	@go build -o bin/main cmd/cache.go
 
 run: build
 	@./bin/main
