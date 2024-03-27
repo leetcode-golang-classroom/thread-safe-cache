@@ -6,7 +6,7 @@ import (
 )
 
 func TestCache(t *testing.T) {
-	cache := NewCache()
+	cache := NewShardMap(10)
 
 	// concurrency fail race test
 	for i := 1; i <= 10; i++ {

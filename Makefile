@@ -7,4 +7,4 @@ run: build
 	@./bin/main
 
 test:
-	@go test -v -cover ./test/...
+	@go test -cover ./... -v --race
